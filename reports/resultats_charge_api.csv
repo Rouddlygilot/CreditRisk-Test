@@ -1,0 +1,4 @@
+utilisateurs_simultanes,requetes_prevues,requetes_reussies,erreurs,duree_totale_secondes,latence_moyenne_ms,latence_mediane_ms,latence_p95_ms,latence_maximale_ms,debit_requetes_seconde,taux_erreur_pourcentage
+5,300,300,0,0.4138,6.6113,5.7724,13.9711,29.4247,725.02,0.0
+10,300,300,0,0.39,12.0973,11.2951,21.6032,32.3724,769.15,0.0
+20,300,300,0,0.3719,23.4171,23.8758,26.0158,35.3978,806.72,0.0

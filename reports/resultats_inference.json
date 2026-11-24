@@ -1,0 +1,14 @@
+{
+    "activite": "Tests de performance",
+    "mesure": "Latence d'inférence",
+    "version_modele": "V1",
+    "nombre_mesures": 1000,
+    "nombre_echauffement": 100,
+    "latence_moyenne_ms": 0.23243919999999998,
+    "latence_mediane_ms": 0.2237,
+    "latence_p95_ms": 0.25801999999999997,
+    "latence_p99_ms": 0.44105199999999994,
+    "latence_min_ms": 0.2191,
+    "latence_max_ms": 0.6402,
+    "debit_theorique_predictions_seconde": 4302.200317330296
+}

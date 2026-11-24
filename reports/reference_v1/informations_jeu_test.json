@@ -1,0 +1,10 @@
+{
+    "nombre_observations": 300,
+    "nombre_variables": 5,
+    "graine_aleatoire": 2026,
+    "type_jeu": "Test indépendant",
+    "repartition_classes": {
+        "classe_0": 32,
+        "classe_1": 268
+    }
+}

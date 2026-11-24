@@ -1,0 +1,11 @@
+{
+    "version": "V2",
+    "parametre_C": 0.5,
+    "type_evaluation": "Jeu de test indépendant",
+    "nombre_observations": 300,
+    "accuracy": 0.8966666666666666,
+    "precision": 0.9100346020761245,
+    "recall": 0.9813432835820896,
+    "f1_score": 0.9443447037701975,
+    "auc": 0.9003031716417911
+}

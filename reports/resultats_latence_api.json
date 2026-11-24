@@ -1,0 +1,17 @@
+{
+    "activite": "Tests de performance",
+    "mesure": "Latence HTTP de l'API",
+    "version_modele": "V1",
+    "nombre_requetes_prevues": 1000,
+    "nombre_requetes_reussies": 1000,
+    "nombre_erreurs": 0,
+    "duree_totale_secondes": 9.637022299997625,
+    "latence_moyenne_ms": 9.634843199924944,
+    "latence_mediane_ms": 3.417050000280142,
+    "latence_p95_ms": 26.602840000487046,
+    "latence_p99_ms": 29.51799899845355,
+    "latence_min_ms": 1.8894000022555701,
+    "latence_max_ms": 39.55040000073495,
+    "debit_requetes_seconde": 103.76649227015345,
+    "taux_erreur_pourcent": 0.0
+}

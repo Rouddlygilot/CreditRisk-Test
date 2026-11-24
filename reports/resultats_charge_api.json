@@ -1,0 +1,41 @@
+[
+    {
+        "utilisateurs_simultanes": 5,
+        "requetes_prevues": 300,
+        "requetes_reussies": 300,
+        "erreurs": 0,
+        "duree_totale_secondes": 0.4138,
+        "latence_moyenne_ms": 6.6113,
+        "latence_mediane_ms": 5.7724,
+        "latence_p95_ms": 13.9711,
+        "latence_maximale_ms": 29.4247,
+        "debit_requetes_seconde": 725.02,
+        "taux_erreur_pourcentage": 0.0
+    },
+    {
+        "utilisateurs_simultanes": 10,
+        "requetes_prevues": 300,
+        "requetes_reussies": 300,
+        "erreurs": 0,
+        "duree_totale_secondes": 0.39,
+        "latence_moyenne_ms": 12.0973,
+        "latence_mediane_ms": 11.2951,
+        "latence_p95_ms": 21.6032,
+        "latence_maximale_ms": 32.3724,
+        "debit_requetes_seconde": 769.15,
+        "taux_erreur_pourcentage": 0.0
+    },
+    {
+        "utilisateurs_simultanes": 20,
+        "requetes_prevues": 300,
+        "requetes_reussies": 300,
+        "erreurs": 0,
+        "duree_totale_secondes": 0.3719,
+        "latence_moyenne_ms": 23.4171,
+        "latence_mediane_ms": 23.8758,
+        "latence_p95_ms": 26.0158,
+        "latence_maximale_ms": 35.3978,
+        "debit_requetes_seconde": 806.72,
+        "taux_erreur_pourcentage": 0.0
+    }
+]

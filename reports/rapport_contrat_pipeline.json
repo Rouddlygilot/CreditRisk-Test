@@ -1,0 +1,34 @@
+{
+    "verification": "Contrat technique des pipelines",
+    "modeles": {
+        "V1": {
+            "version": "V1",
+            "controles": {
+                "pipeline": true,
+                "etapes": true,
+                "standard_scaler": true,
+                "logistic_regression": true,
+                "cinq_variables": true,
+                "parametre_C": true
+            },
+            "nombre_variables": 5,
+            "parametre_C": 1.0,
+            "contrat_valide": true
+        },
+        "V2": {
+            "version": "V2",
+            "controles": {
+                "pipeline": true,
+                "etapes": true,
+                "standard_scaler": true,
+                "logistic_regression": true,
+                "cinq_variables": true,
+                "parametre_C": true
+            },
+            "nombre_variables": 5,
+            "parametre_C": 0.8,
+            "contrat_valide": true
+        }
+    },
+    "validation_globale": true
+}

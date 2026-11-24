@@ -1,0 +1,54 @@
+name: Tests automatises - CreditRisk-Test
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+  pull_request:
+    branches:
+      - main
+      - master
+
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: Tests Python et qualite du code
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Recuperer le code source
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Installer les dependances
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Verifier la qualite du code avec Ruff
+        run: |
+          python -m ruff check app tests
+
+      - name: Executer les tests avec Pytest et couverture
+        run: |
+          python -m pytest tests/ -v \
+            --cov=app \
+            --cov-report=term-missing \
+            --cov-report=xml
+
+      - name: Archiver le rapport de couverture
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-couverture
+          path: coverage.xml
+          if-no-files-found: ignore

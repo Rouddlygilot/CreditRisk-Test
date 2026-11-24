@@ -1,0 +1,98 @@
+{
+    "date_generation": "2026-11-23T20:19:57",
+    "versions": {
+        "reference": "V1",
+        "cible": "V2"
+    },
+    "tests_fonctionnels": {
+        "nombre_reussis": 31,
+        "nombre_echecs": 0,
+        "code_retour_pytest": 0,
+        "validation": true
+    },
+    "comparaison_v1_v2": {
+        "metriques": {
+            "accuracy": {
+                "V1": 0.8966666666666666,
+                "V2": 0.8966666666666666,
+                "difference": 0.0
+            },
+            "precision": {
+                "V1": 0.9100346020761245,
+                "V2": 0.9100346020761245,
+                "difference": 0.0
+            },
+            "recall": {
+                "V1": 0.9813432835820896,
+                "V2": 0.9813432835820896,
+                "difference": 0.0
+            },
+            "f1_score": {
+                "V1": 0.9443447037701975,
+                "V2": 0.9443447037701975,
+                "difference": 0.0
+            },
+            "auc": {
+                "V1": 0.9005363805970149,
+                "V2": 0.900419776119403,
+                "difference": -0.0001166044776118591
+            }
+        },
+        "variation_probabilite_maximale": 0.0032523762516684096,
+        "baisse_recall": 0.0,
+        "baisse_f1_score": 0.0,
+        "ecart_rechargement": 0.0,
+        "seuils": {
+            "variation_probabilite_max": 0.01,
+            "baisse_recall_max": 0.02,
+            "baisse_f1_max": 0.02,
+            "ecart_rechargement_max": 1e-12
+        },
+        "controles": {
+            "variation_probabilites": true,
+            "baisse_recall": true,
+            "baisse_f1_score": true,
+            "sauvegarde_rechargement": true,
+            "comparaison_initiale": true
+        },
+        "validation": true
+    },
+    "contrat_technique": {
+        "verification": "Contrat technique des pipelines",
+        "modeles": {
+            "V1": {
+                "version": "V1",
+                "controles": {
+                    "pipeline": true,
+                    "etapes": true,
+                    "standard_scaler": true,
+                    "logistic_regression": true,
+                    "cinq_variables": true,
+                    "parametre_C": true
+                },
+                "nombre_variables": 5,
+                "parametre_C": 1.0,
+                "contrat_valide": true
+            },
+            "V2": {
+                "version": "V2",
+                "controles": {
+                    "pipeline": true,
+                    "etapes": true,
+                    "standard_scaler": true,
+                    "logistic_regression": true,
+                    "cinq_variables": true,
+                    "parametre_C": true
+                },
+                "nombre_variables": 5,
+                "parametre_C": 0.8,
+                "contrat_valide": true
+            }
+        },
+        "validation_globale": true
+    },
+    "decision_finale": {
+        "non_regression_validee": true,
+        "decision": "NON-RÉGRESSION VALIDÉE"
+    }
+}

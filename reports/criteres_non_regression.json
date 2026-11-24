@@ -1,0 +1,26 @@
+{
+    "version_reference": "V1",
+    "version_cible": "V2",
+    "seuils": {
+        "variation_probabilite_max": 0.01,
+        "baisse_recall_max": 0.02,
+        "baisse_f1_max": 0.02,
+        "ecart_rechargement_max": 1e-12
+    },
+    "tests_obligatoires": {
+        "tests_fonctionnels": true,
+        "contrat_pipeline": true,
+        "comparaison_metriques": true,
+        "controle_recall": true,
+        "controle_f1_score": true,
+        "verification_sauvegarde_rechargement": true
+    },
+    "regles_acceptation": {
+        "tests_fonctionnels": "100 % de réussite",
+        "contrat_pipeline": "Respect intégral",
+        "probabilites": "Variation maximale de 0,01",
+        "recall": "Baisse maximale de 0,02",
+        "f1_score": "Baisse maximale de 0,02",
+        "rechargement": "Prédictions identiques"
+    }
+}
